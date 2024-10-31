@@ -4,11 +4,11 @@ import shutil
 path = r'C:\\Users\\RS-2100\\Desktop\\Portfolio\\Python\\Files Tests\\example_folder2\\'
 folder_names = ['CSV Files', 'Text Files', 'Image Files']
 
-# Criação das pastas caso não existam
+#create the folder in case they don't exist
 for folder in folder_names:
     os.makedirs(os.path.join(path, folder), exist_ok=True)
 
-# Organização dos arquivos nas respectivas pastas
+#organize the files inside their respective folders
 file_names = os.listdir(path)
 
 for file in file_names:
